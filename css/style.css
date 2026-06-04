@@ -1,0 +1,59 @@
+:root {
+    --neutral-900:hsl(0, 0%, 1%);
+    --neutral-400:hsl(30,4%,40%);
+    --neutral-200:hsl(28,100%,97%);
+    --neutral-0:hsl(0,05,100%);
+    --light-red:hsl(7,69%,62%);
+    --galactic-blue:hsl(252,66%,62%);
+    --summer-yellow:hsl(28,89%,67%);
+    --pink:hsl(0,78%,79%);
+    --cyan:hsl(172,46%,57%);
+    --dark-purple:hsl(314,45%,23%);
+}
+.plus-jakarta-sans-medium {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.plus-jakarta-sans-bold {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background: var(--neutral-200);
+    font-size: 1rem;
+}
+img {
+ /* To keep the width of the image from going beyond the screen */
+  max-width: 100%;
+  display: block;
+}
+ul {
+  margin-block: 0;
+  padding-inline-start: 0;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+.container {
+    box-sizing: border-box;
+    max-width: 1130px;
+    margin-inline: auto;
+    padding-inline: 10px;
+}
