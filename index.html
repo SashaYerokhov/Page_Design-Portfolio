@@ -22,20 +22,120 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body class="plus-jakarta-sans-bold">
-    <header class="header">Free Consultation</header>
+    <header class="header container">
+      <img src="./assets/logo.svg" alt="page logo" />
+      <button class="btn__primary">Free Consultation</button>
+    </header>
     <main class="main">
-      Design solutions made easy With over ten years of experience in various
-      design disciplines, I’m your one-stop shop for your design needs. Graphic
-      Design UI/UX Apps Photography Illustrations Motion Graphics I’m Amy, and
-      I’d love to work on your next project I love working with others to create
-      beautiful design solutions. I’ve designed everything from brand
-      illustrations to complete mobile apps. I’m also handy with a camera! Free
-      Consultation My Work Book a call with me I’d love to have a chat to see
-      how I can help you. The best first step is for us to discuss your project
-      during a free consultation. Then we can move forward from there. Free
-      Consultation
+      <section class="hero container">
+        <h1>Design solutions made easy</h1>
+        <p class="plus-jakarta-sans-medium">
+          With over ten years of experience in various design disciplines, I’m
+          your one-stop shop for your design needs.
+        </p>
+        <div class="hero__block">
+          <div class="hero__block-card graphic">
+            <img
+              src="./assets/pattern-graphic-design.svg"
+              alt="pattern graphic design"
+            />
+            <h4>Graphic Design</h4>
+          </div>
+          <div class="hero__block-card ui">
+            <img src="./assets/pattern-ui-ux.svg" alt="pattern ui ux" />
+            <h4>UI/UX</h4>
+          </div>
+          <div class="hero__block-card apps">
+            <img src="./assets/pattern-apps.svg" alt="pattern apps" />
+            <h4>Apps</h4>
+          </div>
+          <div class="hero__block-card illustrations">
+            <img
+              src="./assets/pattern-illustrations.svg"
+              alt="pattern illustrations"
+            />
+            <h4>Illustrations</h4>
+          </div>
+          <div class="hero__block-card photography">
+            <img
+              src="./assets/pattern-photography.svg"
+              alt="pattern photography"
+            />
+            <h4>Photography</h4>
+          </div>
+          <div class="hero__block-card motion">
+            <img
+              src="./assets/pattern-motion-graphics.svg"
+              alt="pattern motion graphics"
+            />
+            <h4>Motion Graphics</h4>
+          </div>
+        </div>
+      </section>
+      <section class="about container">
+        <img src="./assets/image-amy.webp" alt="photo amy" />
+        <div>
+          <h2>I’m Amy, and I’d love to work on your next project</h2>
+          <p class="plus-jakarta-sans-medium">
+            I love working with others to create beautiful design solutions.
+            I’ve designed everything from brand illustrations to complete mobile
+            apps. I’m also handy with a camera!
+          </p>
+          <button class="btn__primary">Free Consultation</button>
+        </div>
+      </section>
+      <section class="work">
+        <h2>My Work</h2>
+        <div class="work__gallery">
+          <div class="gallery">
+            <div class="gallery__flex">
+              <img src="./assets/image-slide-1.jpg" alt="slide 1" />
+              <img src="./assets/image-slide-2.jpg" alt="slide 2" />
+              <img src="./assets/image-slide-3.jpg" alt="slide 3" />
+              <img src="./assets/image-slide-4.jpg" alt="slide 4" />
+              <img src="./assets/image-slide-5.jpg" alt="slide 5" />
+            
+            </div>
+          </div>
+          <div class="gallery__buttons">
+            <button
+              class="btn__gallery prev__button"
+              aria-label="Previous Image"
+            >
+              <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill="#FFF"
+                  d="M8 0 0 8l8 8 1.687-1.687-5.121-5.12h10.241V6.807H4.566l5.121-5.12z"
+                />
+              </svg>
+            </button>
+            <button class="btn__gallery next_button" aria-label="Next Image">
+              <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill="#FFF"
+                  d="m6.808 16 8-8-8-8-1.687 1.687 5.121 5.12H.001v2.386h10.241l-5.121 5.12z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="call container">
+        <div class="call__content">
+          <h2>Book a call with me</h2>
+          <p class="plus-jakarta-sans-medium">
+            I’d love to have a chat to see how I can help you. The best first
+            step is for us to discuss your project during a free consultation.
+            Then we can move forward from there.
+          </p>
+        </div>
+        <button class="btn__primary">Free Consultation</button>
+      </section>
     </main>
-    <footer class="footer">Free Consultation</footer>
+    <footer class="footer container">
+      <img src="./assets/logo.svg" alt="page logo" />
+      <button class="btn__primary">Free Consultation</button>
+    </footer>
     <script src="app.js"></script>
   </body>
 </html>

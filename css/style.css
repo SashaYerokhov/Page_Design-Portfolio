@@ -1,14 +1,14 @@
 :root {
-    --neutral-900:hsl(0, 0%, 1%);
-    --neutral-400:hsl(30,4%,40%);
-    --neutral-200:hsl(28,100%,97%);
-    --neutral-0:hsl(0,05,100%);
-    --light-red:hsl(7,69%,62%);
-    --galactic-blue:hsl(252,66%,62%);
-    --summer-yellow:hsl(28,89%,67%);
-    --pink:hsl(0,78%,79%);
-    --cyan:hsl(172,46%,57%);
-    --dark-purple:hsl(314,45%,23%);
+  --neutral-900: hsl(0, 0%, 1%);
+  --neutral-400: hsl(30, 4%, 40%);
+  --neutral-200: hsl(28, 100%, 97%);
+  --neutral-0: hsl(0, 05, 100%);
+  --light-red: hsl(7, 69%, 62%);
+  --galactic-blue: hsl(252, 66%, 62%);
+  --summer-yellow: hsl(28, 89%, 67%);
+  --pink: hsl(0, 78%, 79%);
+  --cyan: hsl(172, 46%, 57%);
+  --dark-purple: hsl(314, 45%, 23%);
 }
 .plus-jakarta-sans-medium {
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -27,13 +27,18 @@
 ::before {
   box-sizing: inherit;
 }
+html {
+  box-sizing: border-box;
+}
 body {
-    font-family: "Plus Jakarta Sans", sans-serif;
-    background: var(--neutral-200);
-    font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background: var(--neutral-200);
+  font-size: 1rem;
 }
 img {
- /* To keep the width of the image from going beyond the screen */
+  /* To keep the width of the image from going beyond the screen */
   max-width: 100%;
   display: block;
 }
@@ -51,9 +56,277 @@ h6,
 p {
   margin: 0;
 }
+button {
+  border: none;
+  outline: none;
+}
 .container {
-    box-sizing: border-box;
-    max-width: 1130px;
-    margin-inline: auto;
-    padding-inline: 10px;
+  box-sizing: border-box;
+  max-width: 1130px;
+  margin-inline: auto;
+  padding-inline: 10px;
+}
+.btn__primary {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 234px;
+  height: 56px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--neutral-200);
+  transition: background 350ms ease-in-out;
+  cursor: pointer;
+}
+.header {
+  padding-block-start: 32px;
+}
+.header,
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  button {
+    background: var(--neutral-900);
+    &:hover {
+      background: var(--galactic-blue);
+    }
+    &:focus-visible {
+      outline: 2px solid var(--neutral-900);
+      /* Отступ от кнопки */
+      outline-offset: 2px;
+    }
+  }
+}
+.hero {
+  margin-block: 80px 120px;
+  h1 {
+    font-size: 56px;
+    line-height: 130%;
+    text-align: center;
+    color: var(--neutral-900);
+    margin-block-end: 20px;
+  }
+  p {
+    width: 568px;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: var(--neutral-400);
+    margin: 0 auto 80px;
+  }
+  .hero__block {
+    display: grid;
+    grid-template-columns: repeat(6, 165px);
+    grid-template-rows: repeat(2, 182px);
+    gap: 24px;
+    .hero__block-card {
+      border-radius: 8px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      h4 {
+        font-size: 24px;
+        line-height: 130%;
+        color: hsl(0, 0%, 100%);
+      }
+      img {
+        /* Толкает картинку вправо */
+        margin-left: auto;
+      }
+    }
+    .graphic {
+      grid-column: 1 / span 2;
+      grid-row: 1 / span 2;
+      background: var(--galactic-blue);
+      img {
+        width: 128px;
+        height: 192px;
+      }
+    }
+    .ui {
+      grid-column: 3 / span 1;
+      grid-row: 1 / span 1;
+      background: var(--summer-yellow);
+      img {
+        width: 64px;
+        height: 64px;
+      }
+    }
+    .apps {
+      grid-column: 4 / span 1;
+      grid-row: 1 / span 1;
+      background: var(--pink);
+      img {
+        width: 64px;
+        height: 64px;
+      }
+    }
+    .illustrations {
+      grid-column: 3 / span 2;
+      grid-row: 2 / span 1;
+      background: var(--light-red);
+      img {
+        width: 128px;
+        height: 64px;
+      }
+    }
+    .photography {
+      grid-column: 5 / span 2;
+      grid-row: 1 / span 1;
+      background: var(--cyan);
+      img {
+        width: 160px;
+        height: 64px;
+      }
+    }
+    .motion {
+      grid-column: 5 / span 2;
+      grid-row: 2 / span 1;
+      background: var(--dark-purple);
+      img {
+        width: 128px;
+        height: 64px;
+      }
+    }
+  }
+}
+.about {
+  display: flex;
+  align-items: center;
+  column-gap: 145px;
+  margin-block-end: 120px;
+  img {
+    width: 445px;
+    height: 445px;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    h2 {
+      font-size: 40px;
+      line-height: 130%;
+      color: var(--neutral-900);
+    }
+    p {
+      font-size: 18px;
+      line-height: 150%;
+      color: var(--neutral-400);
+    }
+    button {
+      background: var(--light-red);
+      &:hover {
+        background: var(--summer-yellow);
+      }
+      &:focus-visible {
+        outline: 2px solid var(--light-red);
+        /* Отступ от кнопки */
+        outline-offset: 2px;
+      }
+    }
+  }
+}
+.work {
+  h2 {
+    font-size: 40px;
+    line-height: 130%;
+    text-align: center;
+    color: var(--neutral-900);
+    margin-block-end: 48px;
+  }
+  .gallery {
+    /* Ровно 3 картинки с учетом обрезки по 25% и двух gap */
+    max-width: 1414px;
+    margin: 0 auto;
+    /* Прячет 4-ю и 5-ю картинки */
+    overflow: hidden;
+    position: relative;
+    margin-block-end: 42px;
+    .gallery__flex {
+      display: flex;
+      column-gap: 32px;
+      width: 100%;
+      /* Сдвигаем ленту влево, чтобы отцентровать картинки */
+      position: relative;
+      /* Если в макете 1-я картинка должна быть обрезана слева,  */
+      /* ленту нужно сдвинуть влево на величину этой обрезки (135px): */
+      transform: translateX(-135px);
+      img {
+        /* Задаем фиксированную ширину картинок.*/
+        flex: 0 0 540px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+    }
+  }
+  .gallery__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 16px;
+  }
+  .btn__gallery {
+    width: 64px;
+    height: 64px;
+    background: var(--neutral-900);
+    border-radius: 32px;
+    cursor: pointer;
+    transition: background 450ms ease-in-out;
+    &:hover {
+      background: var(--galactic-blue);
+    }
+    &:focus-visible {
+      outline: 2px solid var(--neutral-900);
+      /* Отступ от кнопки */
+      outline-offset: 2px;
+    }
+  }
+  .prev__button {
+  }
+  .next_button {
+  }
+}
+.call {
+  display: flex;
+  align-items: center;
+  column-gap: 208px;
+  background: var(--neutral-900);
+  border-radius: 10px;
+  height: 320px;
+  padding: 81.5px 64px;
+  margin-block: 120px 48px;
+  .call__content {
+    width: 540px;
+    h2 {
+      font-size: 40px;
+      line-height: 130%;
+      color: var(--neutral-200);
+      margin-block-end: 24px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 150%;
+      color: var(--neutral-200);
+    }
+  }
+  button {
+    background: var(--light-red);
+    &:hover {
+      background: var(--summer-yellow);
+    }
+    &:focus-visible {
+      outline: 2px solid var(--light-red);
+      /* Отступ от кнопки */
+      outline-offset: 2px;
+    }
+  }
+}
+.footer {
+  padding-block-end: 64px;
 }
