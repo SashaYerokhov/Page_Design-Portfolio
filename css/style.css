@@ -62,27 +62,27 @@ button {
 }
 .container {
   box-sizing: border-box;
-  max-width: 1130px;
+  max-width: 70.625rem;
   margin-inline: auto;
-  padding-inline: 10px;
+  padding-inline: 0.625rem;
 }
 .btn__primary {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 234px;
-  height: 56px;
+  width: 14.625rem;
+  height: 3.5rem;
   border-radius: 999px;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
   color: var(--neutral-200);
   transition: background 350ms ease-in-out;
   cursor: pointer;
 }
 .header {
-  padding-block-start: 32px;
+  padding-block-start: 2rem;
 }
 .header,
 .footer {
@@ -96,27 +96,27 @@ button {
     }
     &:focus-visible {
       outline: 2px solid var(--neutral-900);
-      /* Отступ от кнопки */
+      /* Indent from the button */
       outline-offset: 2px;
     }
   }
 }
 .hero {
-  margin-block: 80px 120px;
+  margin-block: 5rem 7.5rem;
   h1 {
-    font-size: 56px;
+    font-size: clamp(2.5rem, calc(2.148rem + 1.502vw), 3.5rem);
     line-height: 130%;
     text-align: center;
     color: var(--neutral-900);
-    margin-block-end: 20px;
+    margin-block-end: 1.25rem;
   }
   p {
-    width: 568px;
-    font-size: 18px;
+    width: 35.5rem;
+    font-size: 1.125rem;
     line-height: 28px;
     text-align: center;
     color: var(--neutral-400);
-    margin: 0 auto 80px;
+    margin: 0 auto 5rem;
   }
   .hero__block {
     display: grid;
@@ -125,17 +125,17 @@ button {
     gap: 24px;
     .hero__block-card {
       border-radius: 8px;
-      padding: 24px;
+      padding: 1.5rem;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       h4 {
-        font-size: 24px;
+        font-size: 1.5rem;
         line-height: 130%;
         color: hsl(0, 0%, 100%);
       }
       img {
-        /* Толкает картинку вправо */
+        /* Pushes the image to the right */
         margin-left: auto;
       }
     }
@@ -144,8 +144,8 @@ button {
       grid-row: 1 / span 2;
       background: var(--galactic-blue);
       img {
-        width: 128px;
-        height: 192px;
+        width: 8rem;
+        height: 12rem;
       }
     }
     .ui {
@@ -153,8 +153,8 @@ button {
       grid-row: 1 / span 1;
       background: var(--summer-yellow);
       img {
-        width: 64px;
-        height: 64px;
+        width: 4rem;
+        height: 4rem;
       }
     }
     .apps {
@@ -162,8 +162,8 @@ button {
       grid-row: 1 / span 1;
       background: var(--pink);
       img {
-        width: 64px;
-        height: 64px;
+        width: 4rem;
+        height: 4rem;
       }
     }
     .illustrations {
@@ -171,8 +171,8 @@ button {
       grid-row: 2 / span 1;
       background: var(--light-red);
       img {
-        width: 128px;
-        height: 64px;
+        width: 8rem;
+        height: 4rem;
       }
     }
     .photography {
@@ -180,8 +180,8 @@ button {
       grid-row: 1 / span 1;
       background: var(--cyan);
       img {
-        width: 160px;
-        height: 64px;
+        width: 10rem;
+        height: 4rem;
       }
     }
     .motion {
@@ -189,8 +189,8 @@ button {
       grid-row: 2 / span 1;
       background: var(--dark-purple);
       img {
-        width: 128px;
-        height: 64px;
+        width: 8rem;
+        height: 4rem;
       }
     }
   }
@@ -233,32 +233,32 @@ button {
 }
 .work {
   h2 {
-    font-size: 40px;
+    font-size: 2.5rem;
     line-height: 130%;
     text-align: center;
     color: var(--neutral-900);
-    margin-block-end: 48px;
+    margin-block-end: 3rem;
   }
   .gallery {
-    /* Ровно 3 картинки с учетом обрезки по 25% и двух gap */
-    max-width: 1414px;
+    /* Exactly 3 images, taking into account cropping by 25% and two gaps */
+    max-width: 88.375rem;
     margin: 0 auto;
-    /* Прячет 4-ю и 5-ю картинки */
+    /* Hides the 4th and 5th pictures */
     overflow: hidden;
     position: relative;
-    margin-block-end: 42px;
+    margin-block-end: 2.625rem;
     .gallery__flex {
       display: flex;
       column-gap: 32px;
       width: 100%;
-      /* Сдвигаем ленту влево, чтобы отцентровать картинки */
+      /* Move the ribbon to the left to center the images */
       position: relative;
-      /* Если в макете 1-я картинка должна быть обрезана слева,  */
-      /* ленту нужно сдвинуть влево на величину этой обрезки (135px): */
+      /* If the first image in the layout needs to be cropped on the left, */
+      /* the ribbon needs to be shifted to the left by the amount of this crop (135px): */
       transform: translateX(-135px);
       img {
-        /* Задаем фиксированную ширину картинок.*/
-        flex: 0 0 540px;
+        /* Set a fixed width for images*/
+        flex: 0 0 33.75rem;
         height: auto;
         object-fit: cover;
         border-radius: 8px;
@@ -269,11 +269,11 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 16px;
+    column-gap: 1rem;
   }
   .btn__gallery {
-    width: 64px;
-    height: 64px;
+    width: 4rem;
+    height: 4rem;
     background: var(--neutral-900);
     border-radius: 32px;
     cursor: pointer;
@@ -283,34 +283,30 @@ button {
     }
     &:focus-visible {
       outline: 2px solid var(--neutral-900);
-      /* Отступ от кнопки */
+      /* Indent from the button */
       outline-offset: 2px;
     }
-  }
-  .prev__button {
-  }
-  .next_button {
   }
 }
 .call {
   display: flex;
   align-items: center;
-  column-gap: 208px;
+  column-gap: 13rem;
   background: var(--neutral-900);
   border-radius: 10px;
   height: 320px;
-  padding: 81.5px 64px;
-  margin-block: 120px 48px;
+  padding: 5.0938rem 4rem;
+  margin-block: 7.5rem 3rem;
   .call__content {
-    width: 540px;
+    width: 33.75rem;
     h2 {
-      font-size: 40px;
+      font-size: 2.5rem;
       line-height: 130%;
       color: var(--neutral-200);
-      margin-block-end: 24px;
+      margin-block-end: 1.5rem;
     }
     p {
-      font-size: 18px;
+      font-size: 1.125rem;
       line-height: 150%;
       color: var(--neutral-200);
     }
@@ -322,11 +318,205 @@ button {
     }
     &:focus-visible {
       outline: 2px solid var(--light-red);
-      /* Отступ от кнопки */
+     /* Indent from the button */
       outline-offset: 2px;
     }
   }
 }
 .footer {
   padding-block-end: 64px;
+}
+/* Styles that are only activated for screens from 415px to 770px */
+@media (25.9375rem <= width <= 48.125rem) {
+  .container {
+    max-width: 45.25rem;
+  }
+  .header {
+    padding-block-start: 1.5rem;
+  }
+  .hero {
+    margin-block: 64px 80px;
+    h1 {
+      width: 538px;
+      margin-inline: auto;
+    }
+    p {
+      margin-block-end: 64px;
+    }
+    .hero__block {
+      grid-template-columns: repeat(4, 159px);
+      grid-template-rows: repeat(3, 162px);
+      gap: 20px;
+      .photography {
+        grid-column: 1 / span 2;
+        grid-row: 3 / span 1;
+      }
+      .motion {
+        grid-column: 3 / span 2;
+        grid-row: 3 / span 1;
+      }
+    }
+  }
+  .about {
+    flex-direction: column;
+    gap: 1.5rem 0;
+    margin-block-end: 5rem;
+    img {
+      width: 18.75rem;
+      height: 18.75rem;
+    }
+    div {
+      row-gap: 0;
+      h2 {
+        text-align: center;
+        margin-block-end: 1.25rem;
+      }
+      p {
+        text-align: center;
+        margin-block-end: 2rem;
+      }
+      button {
+        margin-inline: auto;
+      }
+    }
+  }
+  .work {
+    .gallery {
+      margin-block-end: 3rem;
+      .gallery__flex {
+        transform: translateX(-465px);
+      }
+    }
+  }
+  .call {
+    height: 23.8125rem;
+    flex-direction: column;
+    padding: 4rem 5.125rem;
+    margin-block-start: 5rem;
+    gap: 2.5rem 0;
+    .call__content {
+      h2 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (width <= 25.9375rem) {
+  .container {
+    max-width: 22.6875rem;
+  }
+  .btn__primary {
+    width: 11.625rem;
+    height: 3.25rem;
+  }
+  .header,
+  .footer {
+    img {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+  .hero {
+    margin-block: 2.5rem 4rem;
+    p {
+      width: 343px;
+      margin-block-end: 2.5rem;
+    }
+    .hero__block {
+      grid-template-columns: repeat(2, 9.9375rem);
+      grid-template-rows: repeat(6, 11.375rem);
+      column-gap: 24px;
+      .hero__block-card {
+        padding: 20px;
+      }
+      .graphic {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+      }
+      .ui {
+        grid-column: 1 / span 1;
+        grid-row: 3 / span 1;
+      }
+      .apps {
+        grid-column: 2 / span 1;
+        grid-row: 3 / span 1;
+      }
+      .illustrations {
+        grid-column: 1 / span 2;
+        grid-row: 4 / span 1;
+      }
+      .photography {
+        grid-column: 1 / span 2;
+        grid-row: 5 / span 1;
+      }
+      .motion {
+        grid-column: 1 / span 2;
+        grid-row: 6 / span 1;
+      }
+    }
+  }
+  .about {
+    flex-direction: column;
+    gap: 1.5rem 0;
+    margin-block-end: 4rem;
+    img {
+      width: 18.75rem;
+      height: 18.75rem;
+    }
+    div {
+      row-gap: 0;
+      h2 {
+        text-align: center;
+        margin-block-end: 1.25rem;
+      }
+      p {
+        text-align: center;
+        margin-block-end: 2rem;
+      }
+      button {
+        margin-inline: auto;
+      }
+    }
+  }
+  .work {
+    h2 {
+      margin-block-end: 2.5rem;
+    }
+    .gallery {
+      .gallery__flex {
+        column-gap: 1.25rem;
+        transform: translateX(-240px);
+        img {
+          flex: 0 0 270px;
+          width: 16.875rem;
+        }
+      }
+    }
+    .gallery__buttons {
+      .btn__gallery {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+  }
+  .call {
+    height: 26.9375rem;
+    flex-direction: column;
+    padding: 2.5rem 1rem;
+    margin-block-start: 4rem;
+    gap: 2.5rem 0;
+    .call__content {
+      width: 19.4375rem;
+      h2 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+    }
+  }
 }
