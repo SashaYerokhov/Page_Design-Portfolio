@@ -327,7 +327,7 @@ button {
   padding-block-end: 64px;
 }
 /* Styles that are only activated for screens from 415px to 770px */
-@media (min-width: 415px) and (max-width: 770px) {
+@media (25.9375rem <= width <= 48.125rem) {
   .container {
     max-width: 45.25rem;
   }
@@ -405,7 +405,7 @@ button {
   }
 }
 
-@media (max-width: 415px) {
+@media (width <= 28.125rem) {
   .container {
     max-width: 22.6875rem;
   }
